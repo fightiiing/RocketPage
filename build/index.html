@@ -15,6 +15,21 @@
         <h1 class="text-3xl font-medium">
           <a href="#hero">🚀 Acme Rockets</a>
         </h1>
+        <!-- toggle light/dark mode ui -->
+        <div class="flex justify-end items-center space-x-2">
+          <span class="text-small text-gray-800">☼</span>
+            <div>
+              <input type="checkbox" name="" id="tgl" class="hidden" onclick="toggle_darkMode()"/>
+                <label for="tgl">
+                  <div class="cursor-pointer w-9 h-5 flex items-center bg-gray-300 rounded-full p-1">
+                    <div class="transform duration-300 ease-in-out tgl-dot w-4 h-4 bg-white rounded-full shadow-md">
+
+              </div>  
+                </div>
+                  </label>
+                    </div>
+                      <span class="text-small text-gray-400 ">☽</span>
+                        </div>
         <div>
           <button
             id="hamburger-button"
@@ -53,9 +68,6 @@
           >
           <a href="#contact" class="w-full py-6 text-center hover:opacity-90"
             >Contact Us</a
-          >
-          <a href="#footer" class="w-full py-6 text-center hover:opacity-90"
-            >Legal</a
           >
         </nav>
       </section>
@@ -280,7 +292,7 @@
     </main>
 
     <footer id="footer" class="bg-teal-700 text-xl text-white">
-      <section
+      <div
         class="mx-auto flex max-w-4xl flex-col p-4 sm:flex-row sm:justify-between text-center md:text-start">
         <address>
           <h2>Acme Rocket, Inc.</h2>
@@ -291,7 +303,6 @@
           ><br />
           Phone: <a href="tel:+16175555555">(617) 555-5555</a>
         </address>
-        <button class="cursor-pointer text-5xl" onclick="toggle_darkMode()">🌞</button>
         <nav class="hidden flex-col gap-2 sm:flex md:text-end" aria-label="footer" >
           <a href="#rockets" class="hover:opacity-90">Our Rockets</a>
           <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
