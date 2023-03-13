@@ -247,6 +247,7 @@
         <form
           action=""
           class="items-left mx-auto flex max-w-4xl flex-col gap-4 text-2xl sm:text-3xl"
+          data-netlify="true"
         >
           <label for="subject">Subject:</label>
           <input
@@ -265,7 +266,7 @@
             id="message"
             cols="30"
             rows="10"
-            placeholder="Form currently disabled"
+            placeholder="Your Message"
             required
             class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl"
           ></textarea>
@@ -280,26 +281,24 @@
 
     <footer id="footer" class="bg-teal-700 text-xl text-white">
       <section
-        class="mx-auto flex max-w-4xl flex-col p-4 sm:flex-row sm:justify-between"
-      >
+        class="mx-auto flex max-w-4xl flex-col p-4 sm:flex-row sm:justify-between text-center md:text-start">
         <address>
-          <h2>Acme Rocket-Powered Products, Inc.</h2>
+          <h2>Acme Rocket, Inc.</h2>
           555 Astro Way<br />
           Boston, Massachusetts<br />
           Email:
-          <a href="mailto:inquiries@acmerockets.com">Inquires@AcmeRockets.com</a
+          <a href="mailto:inquiries@acmerockets.com">Inquiries@Acme.com</a
           ><br />
           Phone: <a href="tel:+16175555555">(617) 555-5555</a>
         </address>
-        <nav class="hidden flex-col gap-2 md:flex" aria-label="footer">
+        <button class="cursor-pointer text-5xl" onclick="toggle_darkMode()">🌞</button>
+        <nav class="hidden flex-col gap-2 sm:flex md:text-end" aria-label="footer" >
           <a href="#rockets" class="hover:opacity-90">Our Rockets</a>
           <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
           <a href="#contact" class="hover:opacity-90">Contact Us</a>
-        </nav>
-        <div class="flex flex-col sm:gap-2">
           <p class="text-right">Copyright &copy; <span id="year"></span></p>
-          <p class="text-right">All Rights Reserved</p>
-        </div>
+        </nav>
+   
       </section>
     </footer>
   </body>

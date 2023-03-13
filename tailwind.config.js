@@ -1,16 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./build/*.html", "./build/js/*.js"],
+  darkMode:'class',
   theme: {
     extend: {
       screens: {
-        colors: {
-            papayawhip: {
-              light: '#fef4e4',
-              DEFAULT:'#feffd5',
-              dark: '#fef4bc'
-            }
-        },
         'widesreen':{'raw':'(min-aspect-ratio: 3/2)'},
         'tallsreen':{'raw':'(max-aspect-ratio: 13/20)'},
       },
